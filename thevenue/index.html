@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+		<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+			apiKey: "AIzaSyAKSkeK2GsD7iHcUB9pdwXAD2I-S9JPedU",
+			authDomain: "cyclenta.firebaseapp.com",
+			databaseURL: "https://cyclenta.firebaseio.com",
+			projectId: "cyclenta",
+			storageBucket: "",
+			messagingSenderId: "244705708929"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+
+
 <title>The Venue</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -87,7 +103,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 								<li><a href="contact.html">contact</a></li>
 							</ul>
 						</nav>
-						<div class="reservations_phone ml-auto" style="border:solid 0px #FFFFFF;"><button class="btn"style="border:solid 2px #FFFFFF; background-color: rgba(100, 100, 100, 0.5);">Register</button></div>
+
+						<div class="reservations_phone ml-auto" style="border:solid 0px #FFFFFF;"><button class="btn"style="border:solid 2px #FFFFFF; background-color: rgba(100, 100, 100, 0.5);" onclick="window.location.href='phoneAth.html'">Register</button></div>
 					</div>
 				</div>
 			</div>
